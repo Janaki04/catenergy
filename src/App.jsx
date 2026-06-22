@@ -1,28 +1,36 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-// Placeholder or actual Page imports
-import Home from './pages/landing/Hero'; // Contains your CaseStudy section
-// import Catalog from './pages/Catalog';
-// import ProgramSelection from './pages/ProgramSelection';
+import Home from './pages/landing/Hero'; 
+import Catalog from './pages/landing/Catalog';
+import ProgramSelection from './pages/landing/ProgramSelection'; 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function App() {
   return (
+    <>
     <Router>
       <div className="min-h-screen flex flex-col bg-white">
-        {/* Persistent global Navigation Header across all pages */}
-
-        {/* Dynamic Route Content Switcher Window */}
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/catalog" element={<Catalog />} /> */}
-            {/* <Route path="/program" element={<ProgramSelection />} /> */}
+            <Route path="/catalog" element={<Catalog />} />
+            <Route path="/program" element={<ProgramSelection />} />
           </Routes>
         </main>
-
-        {/* Map & Contacts Footer View */}
       </div>
     </Router>
+
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        pauseOnHover
+        draggable
+        theme="light"
+      />
+    </>
   );
 }

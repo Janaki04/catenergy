@@ -4,10 +4,8 @@ export default function Footer() {
   return (
     <div className="w-full bg-[#f2f2f2] font-oswald">
       
-      {/* SECTION 1: MAP & CONTACTS CARD OVERLAY */}
       <div className="relative h-[360px] w-full bg-neutral-100 sm:h-[400px] md:h-[450px]">
         
-        {/* Interactive Location Map */}
         <iframe
           title="Cat Energy Location Map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6066254631317!2d30.320478616096985!3d59.93871626830528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145da1%3A0x4253cd0eb1c8531d!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2s!4v1687175000000!5m2!1sen!2s"
@@ -17,10 +15,8 @@ export default function Footer() {
           referrerPolicy="no-referrer-when-downgrade"
         />
 
-        {/* Custom Map Marker Overlay Pin */}
         <div className="absolute left-[68%] top-[35%] z-10 -translate-x-1/2 -translate-y-1/2 md:left-[66%] md:top-[38%]">
           <div className="relative flex h-14 w-14 items-center justify-center rounded-full bg-white p-1 shadow-xl after:absolute after:bottom-[-6px] after:left-1/2 after:h-3 after:w-3 after:-translate-x-1/2 after:rotate-45 after:bg-white">
-            {/* Simple Cat Icon Pin Visual */}
             <div className="flex h-full w-full items-center justify-center rounded-full bg-gradient-to-tr from-orange-400 to-amber-500 text-white">
               <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.42 0l2.79-2.79C10.02 18.66 11 19 12 19c4.97 0 9-4.03 9-9s-4.03-9-9-9z"/>
@@ -29,18 +25,15 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Floating Address Card */}
         <div className="absolute inset-x-4 top-6 z-20 bg-white px-6 py-8 shadow-sm sm:inset-x-8 md:left-12 md:right-auto md:top-1/2 md:w-[460px] md:-translate-y-1/2 lg:left-24 lg:w-[520px] lg:px-5 lg:py-12">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 items-center">
             
-            {/* Invitation Headline */}
             <div>
               <h3 className="text-start text-lg font-bold uppercase leading-tight tracking-wide text-[#111111] font-[Oswald] sm:text-xl lg:text-xl">
                 ПРИГЛАШАЕМ <br className="hidden sm:block" /> К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!
               </h3>
             </div>
 
-            {/* Structured Address Details */}
             <div className="text-xs font-normal leading-relaxed text-[#444444] space-y-2 sm:text-sm">
               <p className="font-[Oswald] text-neutral-700 tracking-wide font-medium">
                 ул. Большая <br />
@@ -56,19 +49,16 @@ export default function Footer() {
 
       </div>
 
-      {/* SECTION 2: FOOTER PANEL */}
       <footer className="w-full bg-[#f2f2f2]">
         <div className="mx-auto max-w-7xl px-6 py-8 md:px-12 lg:px-24">
           <div className="flex flex-col items-center justify-between gap-6 sm:flex-row sm:gap-4">
             
-            {/* Logo Entity */}
             <div>
               <span className="text-2xl font-black tracking-wider text-[#111111] font-[Oswald] uppercase">
                 CAT <span className="font-light text-[#333333]">ENERGY</span>
               </span>
             </div>
 
-            {/* Social Icons Links Row */}
             <div className="flex items-center gap-8 text-[#444444]">
               <a href="#vk" className="hover:text-[#63b843] transition-colors" aria-label="VKontakte">
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -88,7 +78,6 @@ export default function Footer() {
               </a>
             </div>
 
-            {/* Right Attribution Column */}
             <a 
               href="https://htmlacademy.ru" 
               target="_blank" 

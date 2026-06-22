@@ -99,6 +99,13 @@ p {
   margin: 0;
 }
 
+
+input,
+textarea,
+select {
+  background-color: white;
+}
+
 code,
 .counter {
   display: inline-flex;
